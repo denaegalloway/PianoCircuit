@@ -2953,7 +2953,7 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <part name="C10" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="330p"/>
 <part name="C13" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="50n"/>
 <part name="GND8" library="LinnesLab-Symbols" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="LinnesLab-Symbols" deviceset="VBATT" device=""/>
+<part name="SUPPLY3" library="LinnesLab-Symbols" deviceset="VBATT" device="" value="5V"/>
 <part name="OP3" library="LinnesLab-AnalogIC" deviceset="OP-DUAL" device="R" package3d_urn="urn:adsk.eagle:package:15818288/2"/>
 <part name="SPK1" library="LinnesLab-Electromechanical" deviceset="SPEAKER" device=""/>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM386?-*" device="M" package3d_urn="urn:adsk.eagle:package:16404/2" technology="1"/>
@@ -3403,7 +3403,7 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <pinref part="GND12" gate="G$1" pin="GND"/>
 </segment>
 </net>
-<net name="V_BATT" class="0">
+<net name="5V" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="254" y1="40.64" x2="254" y2="43.18" width="0.1524" layer="91"/>
