@@ -3310,7 +3310,7 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="V-" class="0">
 <segment>
 <pinref part="GND16" gate="G$1" pin="GND"/>
 <pinref part="R30" gate="G$1" pin="1"/>
@@ -3407,7 +3407,7 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <pinref part="GND12" gate="G$1" pin="GND"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="V+" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="254" y1="40.64" x2="254" y2="43.18" width="0.1524" layer="91"/>
@@ -3942,6 +3942,9 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="205,1,558.8,78.9661,OP10P,V+,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
