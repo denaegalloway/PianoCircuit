@@ -2964,6 +2964,7 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <part name="GND11" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="LinnesLab-Symbols" deviceset="VBATT" device="" value="5V"/>
 <part name="GND12" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="R4" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="3.3M"/>
 </parts>
 <sheets>
 <sheet>
@@ -3301,6 +3302,9 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 </instance>
 <instance part="GND12" gate="G$1" x="91.44" y="-55.88" smashed="yes">
 <attribute name="VALUE" x="91.44" y="-56.134" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="R4" gate="G$1" x="553.72" y="93.98" smashed="yes">
+<attribute name="VALUE" x="549.91" y="90.678" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3705,7 +3709,12 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <segment>
 <pinref part="C31" gate="G$1" pin="1"/>
 <pinref part="OP10" gate="B" pin="+IN"/>
-<wire x1="535.94" y1="81.28" x2="551.18" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="81.28" x2="546.1" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="81.28" x2="551.18" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="81.28" x2="546.1" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="546.1" y1="93.98" x2="548.64" y2="93.98" width="0.1524" layer="91"/>
+<junction x="546.1" y="81.28"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -3921,6 +3930,13 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 <wire x1="121.92" y1="-43.18" x2="129.54" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="SPK1" gate="G$1" pin="+"/>
 <wire x1="129.54" y1="-43.18" x2="129.54" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="558.8" y1="93.98" x2="571.5" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="571.5" y1="93.98" x2="571.5" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
